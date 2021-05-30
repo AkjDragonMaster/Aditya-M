@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+struct cricket{
+    int players;
+    char captain[200];
+    char country[978];
+};
+
+int main()
+{
+    struct cricket team1 , team2 , team3;
+    int fi = 1, se = 2, th = 3, input;
+    printf("Enter details of team 1 in the form of: \nCaptain Name - ");
+    scanf("%s", team1.captain);
+    printf("Country - ");
+    scanf("%s", team1.country);
+    printf("Number of Players - ");
+    scanf("%d", &team1.players);
+    printf("Enter details of team 2 in the form of: \nCaptain Name - ");
+    scanf("%s", team2.captain);
+    printf("Country - ");
+    scanf("%s", team2.country);
+    printf("Number of Players - ");
+    scanf("%d", &team2.players);
+    printf("Enter details of team 3 in the form of: \nCaptain Name - ");
+    scanf("%s", team3.captain);
+    printf("Country - ");
+    scanf("%s", team3.country);
+    printf("Number of Players - ");
+    scanf("%d", &team3.players);
+    printf("Enter text to find out details of the teams\n('1' for first one, '2' for second one, and '3' for third one): ");
+    scanf("%d", &input);
+    if(input == fi){
+        printf("\nTeam 1's :\n  Captain Name - %s \n  Country - %s \n  No. of Players - %d \n",team1.captain, team1.country, team1.players);
+    }else if(input == se){
+        printf("\nTeam 2's :\n  Captain Name - %s \n  Country - %s \n  No. of Players - %d \n",team2.captain, team2.country, team2.players);
+    }else if(input == th){
+        printf("\nTeam 3's :\n  Captain Name - %s \n  Country - %s \n  No. of Players - %d \n",team3.captain, team3.country, team3.players);
+    }else{
+        printf("Search result not found");
+    }
+    
+    return 0;
+}

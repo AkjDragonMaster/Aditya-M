@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+struct cricket{
+    int players;
+    char captain[200];
+    char country[978];
+};
+
+int main()
+{
+    struct cricket team1 , team2;
+    printf("Enter details of team 1 in the form of: \nCaptain Name - ");
+    scanf("%s", team1.captain);
+    printf("Country - ");
+    scanf("%s", team1.country);
+    printf("Number of Players - ");
+    scanf("%d", &team1.players);
+    printf("Enter details of team 2 in the form of: \nCaptain Name - ");
+    scanf("%s", team2.captain);
+    printf("Country - ");
+    scanf("%s", team2.country);
+    printf("Number of Players - ");
+    scanf("%d", &team2.players);
+    printf("\nTeam 1's :\n  Captain Name - %s \n  Country - %s \n  No. of Players - %d \n",team1.captain, team1.country, team1.players);
+    printf("\nTeam 2's :\n  Captain Name - %s \n  Country - %s \n  No. of Players - %d",team2.captain, team2.country, team2.players);
+    
+    return 0;
+}

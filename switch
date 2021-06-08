@@ -1,0 +1,72 @@
+#include <stdio.h>
+
+struct reportcard{
+    int maths, science, social, eng; 
+};
+
+int main(){
+    int i;
+	struct reportcard adi, arg, upa, arh, atr;
+	printf("Enter marks of Aditya: \nEnglish - ");
+    scanf("%d", &adi.eng);
+    printf("Science - ");
+    scanf("%d", &adi.science);
+    printf("Social-science - ");
+    scanf("%d", &adi.social);
+    printf("Maths - ");
+    scanf("%d", &adi.maths);
+    
+    printf("Enter marks of Arghya: \nEnglish - ");
+    scanf("%d", &arg.eng);
+    printf("Science - ");
+    scanf("%d", &arg.science);
+    printf("Social-science - ");
+    scanf("%d", &arg.social);
+    printf("Maths - ");
+    scanf("%d", &arg.maths);
+    
+    printf("Enter marks of Upamanyu: \nEnglish - ");
+    scanf("%d", &upa.eng);
+    printf("Science - ");
+    scanf("%d", &upa.science);
+    printf("Social-science - ");
+    scanf("%d", &upa.social);
+    printf("Maths - ");
+    scanf("%d", &upa.maths);
+    
+    printf("Enter marks of Arhant: \nEnglish - ");
+    scanf("%d", &arh.eng);
+    printf("Science - ");
+    scanf("%d", &arh.science);
+    printf("Social-science - ");
+    scanf("%d", &arh.social);
+    printf("Maths - ");
+    scanf("%d", &arh.maths);
+    
+    printf("Enter marks of Atri: \nEnglish - ");
+    scanf("%d", &atr.eng);
+    printf("Science - ");
+    scanf("%d", &atr.science);
+    printf("Social-science - ");
+    scanf("%d", &atr.social);
+    printf("Maths - ");
+    scanf("%d", &atr.maths);
+    
+    printf("Enter the number of the student to find their marks \n(1 for Aditya, 2 for Arghya, 3 for Upamanyu, 4 for Arhant, 5 for Atri): ");
+    scanf("%d", &i);
+    switch(i){
+        case 1 : printf("\nName - Aditya \nEnglish - %d \nScience - %d \nSocial-science - %d \nMaths - %d", adi.eng, adi.science, adi.social, adi.maths);
+        break;
+        case 2 : printf("\nName - Arghya \nEnglish - %d \nScience - %d \nSocial-science - %d \nMaths - %d", arg.eng, arg.science, arg.social, arg.maths);
+        break;
+        case 3 : printf("\nName - Upamanyu \nEnglish - %d \nScience - %d \nSocial-science - %d \nMaths - %d", upa.eng, upa.science, upa.social, upa.maths);
+        break;
+        case 4 : printf("\nName - Arhant \nEnglish - %d \nScience - %d \nSocial-science - %d \nMaths - %d", arh.eng, arh.science, arh.social, arh.maths);
+        break;
+        case 5 : printf("\nName - Atri \nEnglish - %d \nScience - %d \nSocial-science - %d \nMaths - %d", atr.eng, atr.science, atr.social, atr.maths);
+        break;
+        default : printf("Please enter a number between 1 - 5");
+    }
+	
+	return 0;
+}
